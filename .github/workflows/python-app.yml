@@ -23,6 +23,7 @@ jobs:
         run: |
           make publish
           cp README.md output/README.md
+          cp CNAME output/CNAME
           touch output/.nojekyll
 
       - name: Deploy To Master Branch
