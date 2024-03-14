@@ -30,4 +30,3 @@ jobs:
     - name: Generate Site Content
       run: |
         pelican content
-    - name: Test with pytest
