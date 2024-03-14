@@ -1,17 +1,22 @@
 from datetime import datetime
 
 AUTHOR = 'Rey Williams'
-SITENAME = "Rey's Corner"
-SITEURL = ""
-SITELOGO = '/images/profile.png'
-
-
-PATH = "content"
-
+SITENAME = "Rey's Corner | Blog"
 TIMEZONE = 'America/Los_Angeles'
-
 DEFAULT_LANG = 'English'
 
+# set up through custom images through content/images
+FAVICON = '/images/favicon.ico'
+SITELOGO = '/images/profile.png'
+
+# locally cloned Flex theme -> https://github.com/alexandrevicenzi/Flex
+THEME = 'theme'
+
+# Path to content directory to be processed by Pelican.
+PATH = "content"
+
+
+# A list of directories (relative to PATH) in which to look for static files. 
 STATIC_PATHS = [
     "images",
 ]
@@ -24,9 +29,16 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+MAIN_MENU = True
+MENUITEMS = (
+    ("Archives", "/archives.html"),
+    ("Categories", "/categories.html"),
+    ("Tags", "/tags.html"),
+)
+
 # Blogroll
 LINKS = (
-    ("Web Resume", "https://web.reywilliams.com"),
+    ("My Web Resume", "https://web.reywilliams.com"),
 
 )
 
@@ -42,7 +54,7 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-
+# Copyright
 CC_LICENSE = {
     "name": "Creative Commons Attribution-ShareAlike",
     "version": "4.0",
@@ -51,13 +63,8 @@ CC_LICENSE = {
 COPYRIGHT_NAME = 'Rey Williams'
 COPYRIGHT_YEAR = datetime.now().year
 
+# Theming configuration
 THEME_COLOR = 'dark'
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
 PYGMENTS_STYLE = 'emacs'
 PYGMENTS_STYLE_DARK = 'monokai'
-
-MENUITEMS = (
-    ("Archives", "/archives.html"),
-    ("Categories", "/categories.html"),
-    ("Tags", "/tags.html"),
-)
