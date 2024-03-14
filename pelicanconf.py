@@ -4,6 +4,7 @@ AUTHOR = 'Rey Williams'
 SITENAME = "Rey's Corner | Blog"
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = 'English'
+SITEURL = "" # to force URLs not to use localhost
 
 # set up through custom images through content/images
 FAVICON = '/images/favicon.ico'
