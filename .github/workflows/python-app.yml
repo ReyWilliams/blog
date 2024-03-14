@@ -22,6 +22,7 @@ jobs:
       - name: Build Production Site
         run: |
           make publish
+          cp README.md output/README.md
           touch output/.nojekyll
 
       - name: Deploy To Master Branch
