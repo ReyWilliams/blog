@@ -51,11 +51,13 @@ PWM is not only for audio and it’s a similar concept used for controlling the 
 
 # What Should Be Done Once Sound is Captured?
 
-If we follow the I2S approach and do some tinkering to use a [cron job](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/raspberry-pi-wiring-test) or the link to (at set intervals) capture a wav file then we can continue on with the [AWS approach](https://aws.amazon.com/blogs/machine-learning/detect-audio-events-with-amazon-rekognition/) where we would capture those files, upload those files to S3 and then move on to detect audio events using the sound’s converted spectrogram image and doing analysis that way. 
+If we follow the I2S approach and do some tinkering to use a [cron job](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/raspberry-pi-wiring-test) or the like to (at set intervals) capture a wav file then we can continue on with the [AWS approach](https://aws.amazon.com/blogs/machine-learning/detect-audio-events-with-amazon-rekognition/) where we would capture those files, upload those files to S3 and then move on to detect audio events using the sound’s converted spectrogram image and doing analysis that way with the windows (we need to get overlapping segments) of the sound samples.
 
-We would need to follow the [guide/sample here](https://github.com/aws-samples/using-rekognition-to-detect-sounds?tab=readme-ov-file#building-a-training-and-validation-data-set) (make note of the licenses - small read-up for licensing [here](https://redpalm.co.uk/importance-of-software-licensing/)) and actually do sample testing with gunshot sounds to really see what spectorgram would be ideal. The guide notes that during the building of the training and validation data set:
+We would need to follow the [guide/sample here](https://github.com/aws-samples/using-rekognition-to-detect-sounds?tab=readme-ov-file#building-a-training-and-validation-data-set) (make note of the licenses - small read-up for licensing [here](https://redpalm.co.uk/importance-of-software-licensing/)) and do sample testing with gunshot sounds to see what spectorgram would be ideal. The guide notes that during the building of the training and validation data set:
 
 > Each resulting sound is then converted into a set of different types of spectrogram images. This variety of spectrograms (including Mel, Harmonic, and others) can be tested to determine which spectrogram type works best with your data set.
+
+so we'd be able to use those distinct sets and find an ideal type - this might differ between different environments per use case.
 
 # Diagram (WIP)
 Please use the site footer to switch to light mode and better read the diagram labels.
