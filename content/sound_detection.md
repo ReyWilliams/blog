@@ -58,6 +58,7 @@ We would need to follow the [guide/sample here](https://github.com/aws-samples/u
 > Each resulting sound is then converted into a set of different types of spectrogram images. This variety of spectrograms (including Mel, Harmonic, and others) can be tested to determine which spectrogram type works best with your data set.
 
 # Diagram (WIP)
+Please use the site footer to switch to light mode and better read the diagram labels.
 
 ![Diagram](https://raw.githubusercontent.com/ReyWilliams/blog/writing/content/images/Sound%20Stream.drawio.svg)
 
