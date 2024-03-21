@@ -60,6 +60,6 @@ We would need to follow the [guide/sample here](https://github.com/aws-samples/u
 # Diagram (WIP)
 Please use the site footer to switch to light mode and better read the diagram labels.
 
-![Diagram](https://raw.githubusercontent.com/ReyWilliams/blog/writing/content/images/Sound%20Stream.drawio.svg)
+![Diagram](https://raw.githubusercontent.com/ReyWilliams/blog/writing/content/images/Sound%20Stream.png)
 
 
