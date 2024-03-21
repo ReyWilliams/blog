@@ -1,3 +1,7 @@
+Title: Sound Detection/Analysis for Firearm Safety Solutions
+Date: 2024-03-20 05:24 PM 
+Category: Research
+
 # Sound Detection/Analysis for Firearm Safety Solutions
 
 # Intro
