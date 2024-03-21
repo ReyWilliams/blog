@@ -59,6 +59,6 @@ We would need to follow the [guide/sample here](https://github.com/aws-samples/u
 
 # Diagram (WIP)
 
-[Diagram](https://raw.githubusercontent.com/ReyWilliams/blog/writing/content/images/Sound%20Stream.drawio.svg)
+![Diagram](https://raw.githubusercontent.com/ReyWilliams/blog/writing/content/images/Sound%20Stream.drawio.svg)
 
 
